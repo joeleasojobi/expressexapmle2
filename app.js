@@ -14,6 +14,6 @@ app.get('/firstpage',(req,res)=>{
     res.send("This is the first page")
 })
 
-app.listen(3000,()=>{
+app.listen( process.env.PORT ||3000,()=>{
     console.log("Server Started");
 })
